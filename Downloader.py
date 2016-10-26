@@ -1,4 +1,3 @@
-import pyodbc
 import os
 import logging
 from urllib.request import urlopen
