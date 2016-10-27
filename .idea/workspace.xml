@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="909b62bd-5dca-4e01-98ae-3ecc966993c9" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/CreateTables.py" afterPath="$PROJECT_DIR$/CreateTables.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Downloader.py" afterPath="$PROJECT_DIR$/Downloader.py" />
     </list>
     <ignored path="Cogccdatabase.iws" />
@@ -47,8 +45,8 @@
       <file leaf-file-name="Downloader.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Downloader.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="594">
-              <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+            <state relative-caret-position="528">
+              <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
               <folding>
                 <element signature="e#0#9#0" expanded="true" />
               </folding>
@@ -472,8 +470,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Downloader.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="81" column="40" selection-start-line="81" selection-start-column="40" selection-end-line="81" selection-end-column="40" />
+        <state relative-caret-position="528">
+          <caret line="39" column="78" selection-start-line="39" selection-start-column="78" selection-end-line="39" selection-end-column="78" />
           <folding>
             <element signature="e#0#9#0" expanded="true" />
           </folding>
