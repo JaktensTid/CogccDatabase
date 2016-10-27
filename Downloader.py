@@ -44,7 +44,7 @@ def mdb_to_csv(path_to_mdb):
     try:
         logging.info(u'Running mdb-export on %s' % path_to_mdb)
         subprocess.call("mdb-export '%s' 'colorado well completions' > Temporary/result.csv" % path_to_mdb, shell=True)
-        os.remove("Temporary/" + path_to_mdb)
+        os.remove(path_to_mdb)
         logging.info(u'Mdb-export successfully over')
     except Exception as e:
         logging.error(u'Message: ' + str(e))
