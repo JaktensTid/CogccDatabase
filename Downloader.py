@@ -37,7 +37,7 @@ def download_well_completion(link):
     zf.close()
     os.remove("Temporary/" + tempfile_path)
     logging.info(u'Downloading over: ' + link)
-    return [f for f in listdir("Temporary") if isfile(join("Temporary", f))][1]
+    return "Temporary/" + [f for f in listdir("Temporary") if isfile(join("Temporary", f))][1]
 
 def mdb_to_csv(path_to_mdb):
     '''Returns path to .csv file'''
