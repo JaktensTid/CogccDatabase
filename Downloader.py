@@ -57,7 +57,7 @@ def download_well_completion(link):
 def download_production_report(link):
     '''Returns path to csv'''
     logging.info(u"Production report downloading link: " + link)
-    response = urlopen(link).read()
+    response = urlopen(link)
     filename = link.split('/')[-1]
     path = os.path.join("Temporary",filename)
     with open(path, 'wb') as f:
