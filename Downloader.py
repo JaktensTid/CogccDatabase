@@ -8,6 +8,8 @@ from zipfile import ZipFile
 from CreateTables import column_names, tables_names
 from DatabaseConnection import get_connection
 import subprocess
+from datetime import date
+import re
 
 insert_into_well_completions_query = "INSERT INTO {0}({1}) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)".format(tables_names[0], ','.join(column_names[0]))
 insert_into_production_reports_query = "INSERT INTO {0}({1}) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)".format(tables_names[1], ','.join(column_names[1]))
@@ -18,7 +20,7 @@ production_summaries_link = "http://cogcc.state.co.us/documents/data/downloads/p
 production_summaries_current_year_link = "http://cogcc.state.co.us/documents/data/downloads/production/monthly_prod.csv"
 
 def download_and_insert_all_well_completions():
-    links = [(year,well_completions_link.format(year)) for year in [range(1999, 2017)]]
+    links = [(year,well_completions_link.format(year)) for year in range(1999, 2017)]
     logging.info(u'Starting processing of well complections')
 
     for year, link in links:
@@ -29,7 +31,7 @@ def download_and_insert_all_well_completions():
     logging.info(u'Ended processing of well complections')
 
 def download_and_insert_all_production_reports():
-    links = [(year,production_summaries_link.format(year)) for year in range(1999, 2016)] # + [(date.today().year, production_summaries_current_year_link)]
+    links = [(year,production_summaries_link.format(year)) for year in range(1999, 2016)] + [(date.today().year, production_summaries_current_year_link)]
     logging.info(u'Starting processing of production reports')
 
     for year, link in links:
@@ -56,12 +58,16 @@ def download_production_report(link):
     '''Returns path to csv'''
     logging.info(u"Production report downloading link: " + link)
     response = urlopen(link).read()
-    logging.info(u"Production report downloading over, link: " + link)
     filename = link.split('/')[-1]
     path = os.path.join("Temporary",filename)
-    f = open(path, "wb")
-    f.write(response)
-    f.close()
+    with open(path, 'wb') as f:
+        while True:
+            chunk = response.read(1024)
+            if not chunk:
+                break
+            f.write(chunk)
+
+    logging.info(u"Production report downloading over, link: " + link)
     return path
 
 def mdb_to_csv(path_to_mdb):
@@ -76,7 +82,7 @@ def mdb_to_csv(path_to_mdb):
         os.remove(path_to_mdb)
     return 'Temporary/result.csv'
 
-def insert_to_database(path_to_csv, query, year):
+def insert_to_database(path_to_csv, query, year, id='summaries'):
     logging.info(u"Inserting into database began")
     inserted_rows_counter = 0
     try:
@@ -91,8 +97,12 @@ def insert_to_database(path_to_csv, query, year):
                         for value in row:
                             value = value.strip() if value != "" else None
                             data.append(value)
-                        if len(data) < 34:
+                        if id == 'summaries' and len(data) < 34:
                             data.append(None)
+                        if id == 'wells' and len(data) < 41:
+                            data[29:29] = [None,None,None,None]
+                            data += [None]
+                            data = [value if not isinstance(value,str) else re.sub("\s\s+", " ", value) for value in data]
                         cursor.execute(query, data)
                         inserted_rows_counter += 1
                     counter += 1
@@ -106,5 +116,5 @@ def _test_exporting():
     insert_to_database("Dataexample/colorado well completions.csv", insert_into_well_completions_query, 2016)
 
 if __name__ == "__main__":#    path_to_mdb = download_well_completion("http://cogcc.state.co.us/documents/data/downloads/production/co%202016%20Annual%20Production%20Summary-xp.zip")
-    download_and_insert_all_production_reports()
     download_and_insert_all_well_completions()
+    download_and_insert_all_production_reports()
