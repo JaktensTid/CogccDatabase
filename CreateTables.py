@@ -53,7 +53,7 @@ CREATE TABLE production_reports
 year varchar(4),
 report_month varchar(2),
 report_year smallint,
-st varchar(2),
+St varchar(2),
 api_county_code varchar(3),
 api_seq_num varchar(5),
 sidetrack_num varchar(2),
@@ -68,14 +68,29 @@ bom_invent int,
 oil_vol int,
 oil_sales int,
 adjustment int,
-eom_invent int
+eom_invent int,
+gravity_sales real,
+gas_sales int,
+flared int,
+gas_vol int,
+shrink int,
+gas_prod int,
+btu_sales int,
+gas_press_tbg int,
+gas_press_csg int,
+operator_num int,
+name varchar(50),
+facility_name varchar(35),
+facility_num varchar(15),
+accepted_date timestamp,
+revised varchar(1)
 );
 """
 
 #First list - well completions, Second list - production reports
 column_names = (
     ['year','name','operator_num','facility_num','facility_name','well_name','api_county_code','api_seq_num','sidetrack_num','API_num','formation_code','formation','county','field_name','field_code','qtrqtr','sec','twp','range','meridian','dist_e_w','dir_e_w','dist_n_s','dir_n_s','lat','long','ground_elev','utm_x','utm_y','spud_date','td_date','WbMeasDepth','WbTvd','gas_type','test_date','well_bore_status','status_date','first_prod_date','form_status_date','formation_status','complete_date'],
-    ['report_month','report_year','st','api_county_code','api_seq_num','sidetrack_num','formation_code','well_status','prod_days','water_disp_code','water_vol','water_press_tbg','water_press_csg','bom_invent','oil_vol','oil_sales','adjustment','eom_invent'])
+    ['year','report_month','report_year','st','api_county_code','api_seq_num','sidetrack_num','formation_code','well_status','prod_days','water_disp_code','water_vol','water_press_tbg','water_press_csg','bom_invent','oil_vol','oil_sales','adjustment','eom_invent', 'gravity_sales','gas_sales','flared','gas_vol','shrink','gas_prod','btu_sales','gas_press_tbg','gas_press_csg','operator_num','name','facility_name','facility_num','accepted_date','revised'])
 
 tables_names = ('well_completions','production_reports')
 
