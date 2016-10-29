@@ -122,10 +122,12 @@ def insert_to_database(path_to_csv, query, year, id='reports', cron=False):
                         delete_query = """DELETE FROM {0}
                                         WHERE year='{1}';""".format(tables_names[1], year)
                         cursor.execute(delete_query)
+                        logging.info(u"Removed records in " + tables_names[1] + ", year: " + year)
                     if id == 'wells':
                         delete_query = """DELETE FROM {0}
                                         WHERE year='{1}';""".format(tables_names[0], year)
                         cursor.execute(delete_query)
+                        logging.info(u"Removed records in " + tables_names[0] + ", year: " + year)
                 reader = csv.reader(csvfile, delimiter=',', quotechar='"')
                 counter = 0
                 for row in reader:
