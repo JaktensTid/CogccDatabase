@@ -26,7 +26,7 @@ def download_and_insert_all_well_completions():
     for year, link in links:
         mdb = download_well_completion(link)
         csv = mdb_to_csv(mdb)
-        insert_to_database(csv, insert_into_well_completions_query, year)
+        insert_to_database(csv, insert_into_well_completions_query, year,'wells')
 
     logging.info(u'Ended processing of well complections')
 
@@ -39,6 +39,23 @@ def download_and_insert_all_production_reports():
         insert_to_database(csv, insert_into_production_reports_query, year)
 
     logging.info(u'Ended processing of production reports')
+
+def download_and_insert_last_production_report():
+	'''Updating script'''
+	logging.info(u'Updating last production reports')
+	year = date.today().year
+	link = production_reports_current_year_link
+	csv = download_production_report(link)
+	insert_to_database(csv, insert_into_production_reports_query, year)
+
+def download_and_insert_last_well_completion():
+	'''Updating script'''
+	logging.info(u'Updating last well completion')
+	year = date.today().year
+	link = well_completions_link.format(year)
+	mdb = download_well_completion(link)
+	csv = mdb_to_csv(mdb)
+	insert_to_database(csv, insert_into_well_completions_query, year)
 
 def download_well_completion(link):
     '''Returns path to .mdb file'''
