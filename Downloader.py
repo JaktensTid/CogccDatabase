@@ -29,7 +29,7 @@ def download_and_insert_all_well_completions():
     for year, link in links:
         mdb = download_well_completion(link)
         csv = mdb_to_csv(mdb)
-        insert_to_database(csv, insert_into_well_completions_query, year, 'wells')
+        insert_to_database(csv, insert_into_well_completions_query, year, id='wells')
 
     logging.info(u'Ended processing of well complections')
 
@@ -122,12 +122,12 @@ def insert_to_database(path_to_csv, query, year, id='reports', cron=False):
                         delete_query = """DELETE FROM {0}
                                         WHERE year='{1}';""".format(tables_names[1], year)
                         cursor.execute(delete_query)
-                        logging.info(u"Removed records in " + tables_names[1] + ", year: " + year)
+                        logging.info(u"Removed records in " + tables_names[1] + ", year: " + str(year))
                     if id == 'wells':
                         delete_query = """DELETE FROM {0}
                                         WHERE year='{1}';""".format(tables_names[0], year)
                         cursor.execute(delete_query)
-                        logging.info(u"Removed records in " + tables_names[0] + ", year: " + year)
+                        logging.info(u"Removed records in " + tables_names[0] + ", year: " + str(year))
                 reader = csv.reader(csvfile, delimiter=',', quotechar='"')
                 counter = 0
                 for row in reader:
