@@ -77,7 +77,7 @@ def download_well_completion(link):
     zf.close()
     os.remove("Temporary/" + tempfile_path)
     logging.info(u'Downloading over: ' + link)
-    return "Temporary/" + [f for f in listdir("Temporary") if isfile(join("Temporary", f))][1]
+    return "Temporary/" + [f for f in listdir("Temporary") if isfile(join("Temporary", f))][0]
 
 
 def download_production_report(link):
