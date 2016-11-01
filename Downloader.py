@@ -23,7 +23,7 @@ production_reports_current_year_link = "http://cogcc.state.co.us/documents/data/
 
 
 def download_and_insert_all_well_completions():
-    links = [(year, well_completions_link.format(year)) for year in range(1999, 2017)]
+    links = [(year, well_completions_link.format(year)) for year in range(1999, date.today().year + 1)]
     logging.info(u'Starting processing of well complections')
 
     for year, link in links:
@@ -35,7 +35,7 @@ def download_and_insert_all_well_completions():
 
 
 def download_and_insert_all_production_reports():
-    links = [(year, production_reports_link.format(year)) for year in range(1999, 2016)] + [
+    links = [(year, production_reports_link.format(year)) for year in range(1999, date.today().year)] + [
         (date.today().year, production_reports_current_year_link)]
     logging.info(u'Starting processing of production reports')
 
