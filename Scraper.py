@@ -1,6 +1,7 @@
 from lxml import html
 from lxml import etree
 from datetime import date
+from UpdatingScript import download_and_insert_data_by_all_apis_by_year
 import requests
 
 sceleton = 'http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=%s&APISeq=%s&APIWB=%s&Year=%s'
@@ -39,7 +40,7 @@ def get_rows_by_link(link):
         row["water_csg"] = tr.xpath("./td[15]//text()")[0]
         for key in row.keys():
             value = row[key]
-            row[key] = value if not value.isspace() else None
+            row[key] = value.strip() if not value.isspace() else None
         rows.append(row)
     return tuple(rows)
 
@@ -52,8 +53,3 @@ def download_all_data_by_well(api_county_code, api_seq_num, sidetrack_num):
     for year in range(1999, date.today().year + 1):
         data_for_years.append(download_data_by_well_one_year(api_county_code,api_seq_num,sidetrack_num, year))
     return data_for_years
-
-
-if __name__ == "__main__":
-    data = get_rows_by_link('http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=125&APISeq=12105&APIWB=00&Year=2016')
-    print(data)

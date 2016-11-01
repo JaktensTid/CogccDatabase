@@ -9,6 +9,7 @@ from CreateTables import column_names, tables_names
 from DatabaseConnection import get_connection
 import subprocess
 from datetime import date
+from UpdatingScript import download_and_insert_data_by_all_apis_by_year
 import re
 
 insert_into_well_completions_query = "INSERT INTO {0}({1}) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)".format(
@@ -158,5 +159,7 @@ def _test_exporting():
 
 
 if __name__ == "__main__":  # path_to_mdb = download_well_completion("http://cogcc.state.co.us/documents/data/downloads/production/co%202016%20Annual%20Production%20Summary-xp.zip")
-    download_and_insert_all_well_completions()
-    download_and_insert_all_production_reports()
+    #download_and_insert_all_well_completions()
+    #download_and_insert_all_production_reports()
+    for year in range(1999, 2017):
+         download_and_insert_data_by_all_apis_by_year(year)
