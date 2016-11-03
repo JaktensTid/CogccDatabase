@@ -1,7 +1,6 @@
 from lxml import html
 from lxml import etree
 from datetime import date
-from UpdatingScript import download_and_insert_data_by_all_apis_by_year
 import requests
 
 sceleton = 'http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=%s&APISeq=%s&APIWB=%s&Year=%s'

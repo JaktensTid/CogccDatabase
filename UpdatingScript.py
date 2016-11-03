@@ -52,7 +52,7 @@ def clear_last_year_table():
         connection.commit()
         logging.info(u"Clearing last year table -- success")
 
-def download_and_insert_data_by_all_apis_by_year(year):
+def download_and_insert_data_by_all_apis_by_year(year,fh):
     def dict_to_insert(d, cursor):
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
@@ -73,7 +73,8 @@ def download_and_insert_data_by_all_apis_by_year(year):
                     d['sidetrack_num'] = row[2]
                     dict_to_insert(d, cursor2)
                 connection2.commit()
-                logging.info(u"Inserted data " + str(row[0]) + " " + str(row[1]) + " "  + str(row[2]))
+                fh.write(row[0]+row[1]+row[2]+str(year)+':')
+                fh.flush()
     logging.info(u"Inserting -- success")
 
 

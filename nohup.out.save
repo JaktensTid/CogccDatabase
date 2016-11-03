@@ -1,0 +1,345 @@
+
+INFO:root:Current working: 1999
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05000&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05001&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05002&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05003&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05004&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05005&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05006&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05007&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05008&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05009&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05010&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05011&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05012&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05013&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05014&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05015&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05016&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05017&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05018&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05019&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05020&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05021&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05022&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05023&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05025&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05026&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05028&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05029&APIWB=00&Year=1999 HTTP/1.1" 200 26920
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05030&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05031&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05032&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05033&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05035&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05036&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05037&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05038&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05039&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05040&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05041&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05042&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05043&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05044&APIWB=00&Year=1999 HTTP/1.1" 200 27056
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05045&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05046&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05047&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05048&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05049&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05050&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05051&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05052&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05053&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05054&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05055&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05057&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05058&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05059&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05060&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05188&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05061&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05062&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05063&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05064&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05065&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05066&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05067&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05068&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05069&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05070&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05071&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05072&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05073&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05074&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05075&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05076&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05077&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05078&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05079&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05080&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05082&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05083&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05084&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05085&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05086&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05087&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05088&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05089&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05090&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05091&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05092&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05093&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05094&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05095&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05096&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05097&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05098&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05099&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05100&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05101&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05102&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05104&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05105&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05106&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05107&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05108&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05109&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05110&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05112&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05113&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05114&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05115&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05116&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05117&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05118&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05119&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05120&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05121&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05122&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05123&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05124&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05125&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05126&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05127&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05128&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05129&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05130&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05131&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05132&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05133&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05134&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05135&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05136&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05138&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05139&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05140&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05141&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05142&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05143&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05145&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05146&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05147&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05149&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05150&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05151&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05153&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05154&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05155&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05156&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05158&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05159&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05160&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05161&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05162&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05163&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05164&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05165&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05166&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05167&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05168&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05169&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05170&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05171&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05172&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05173&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05174&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05175&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05176&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05177&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05178&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05179&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05180&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05181&APIWB=00&Year=1999 HTTP/1.1" 200 1105
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
