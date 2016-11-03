@@ -166,12 +166,11 @@ if __name__ == "__main__":  # path_to_mdb = download_well_completion("http://cog
         with open('checkedapi_%s' % year, 'a') as fh:
             with get_connection() as connection:
                 cursor = connection.cursor()
-                cursor.execute(cursor.execute("""SELECT EXISTS (
+                cursor.execute("""SELECT EXISTS (
                    SELECT 1
                    FROM   information_schema.tables
                    WHERE  table_schema = 'public'
-                   AND    table_name = 'checked_api_%s'
-                );""" % date.today().year))
+                   AND    table_name = 'checked_api_%s');""" % date.today().year)
                 table_exists = True
                 for row in cursor:
                     table_exists = row[0]
