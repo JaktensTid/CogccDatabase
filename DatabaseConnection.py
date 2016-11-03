@@ -2,12 +2,12 @@ import psycopg2
 
 
 def get_connection():
-    return psycopg2.connect(database="data",user="postgres",host="localhost",port=5432,password="7ACGApgx")
+    return psycopg2.connect(database="data",user="postgres",host="localhost",port=5432,password="")
 
 def write_checked_api_in_database(year):
     with get_connection() as connection:
         cursor = connection.cursor()
-        with open('checkedapi', 'r') as fh:
+        with open('checkedapi_%s' % year, 'r') as fh:
             str = fh.read()
             query = """INSERT INTO checked_api_%s(api_county_code,
                                 api_seq_num,

@@ -88,7 +88,8 @@ def update():
     move_data_to_wells_apis()
     check_and_create_table_if_not_exist()
     clear_last_year_table()
-    download_and_insert_data_by_all_apis_by_year(date.today().year)
+    with open('cron_apis_by_year','w+') as fh:
+        download_and_insert_data_by_all_apis_by_year(date.today().year, fh)
     logging.info(u"Cron job over")
 
 
