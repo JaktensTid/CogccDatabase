@@ -62,8 +62,12 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
         with get_connection() as connection2:
             cursor1 = connection1.cursor()
             cursor2 = connection2.cursor()
-            get_wells_query = "SELECT api_county_code, api_seq_num, sidetrack_num FROM wells_apis;"
-            cursor1.execute(get_wells_query)
+            get_wells_query = """SELECT api_county_code, api_seq_num, sidetrack_num FROM wells_apis WHERE NOT EXISTS
+                                (SELECT api_county_code, api_seq_num, sidetrack_num FROM checked_api_%s
+                                WHERE wells_apis.api_county_code=checked_api_%s.api_county_code
+                                AND wells_apis.api_seq_num=checked_api_%s.api_seq_num
+                                AND wells_apis.sidetrack_num=checked_api_%s.sidetrack_num);"""
+            cursor1.execute(get_wells_query % (year,year,year,year))
             for row in cursor1:
                 data = download_data_by_well_one_year(row[0], row[1], row[2], year)
                 for d in data:

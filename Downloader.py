@@ -161,8 +161,26 @@ def _test_exporting():
 if __name__ == "__main__":  # path_to_mdb = download_well_completion("http://cogcc.state.co.us/documents/data/downloads/production/co%202016%20Annual%20Production%20Summary-xp.zip")
     #download_and_insert_all_well_completions()
     #download_and_insert_all_production_reports()
-    with open('checkedapi','w') as fh:
-        for year in reversed(range(1999, 2017)):
+
+    for year in reversed(range(1999, 2017)):
+        with open('checkedapi_%s' % year, 'a') as fh:
+            with get_connection() as connection:
+                cursor = connection.cursor()
+                cursor.execute(cursor.execute("""SELECT EXISTS (
+                   SELECT 1
+                   FROM   information_schema.tables
+                   WHERE  table_schema = 'public'
+                   AND    table_name = 'checked_api_%s'
+                );""" % date.today().year))
+                table_exists = True
+                for row in cursor:
+                    table_exists = row[0]
+                    break
+                if not table_exists:
+                    cursor.execute("""CREATE TABLE checked_api_%s(api_county_code varchar(3),
+                    api_seq_num varchar(5)
+                    sidetrack_num varchar(2)""" % year)
+                connection.commit()
             logging.info(u'Current working: ' + str(year))
             UpdatingScript.download_and_insert_data_by_all_apis_by_year(year, fh)
     logging.info(u'Processing ended *********')
