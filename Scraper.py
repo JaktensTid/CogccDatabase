@@ -6,7 +6,7 @@ import requests
 sceleton = 'http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=%s&APISeq=%s&APIWB=%s&Year=%s'
 
 def get_rows_by_link(link):
-    response = requests.get(link)
+    response = requests.get(link, timeout=5)
     document = html.fromstring(response.content)
     second_table = ""
     try:
