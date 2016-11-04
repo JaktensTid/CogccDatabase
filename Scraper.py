@@ -1,12 +1,14 @@
 from lxml import html
 from lxml import etree
 from datetime import date
+import logging
 import requests
 
 sceleton = 'http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=%s&APISeq=%s&APIWB=%s&Year=%s'
 
 def get_rows_by_link(link):
-    response = requests.get(link)
+    logging.info('Downloading ' + link)
+    response = requests.get(link, timeout=10)
     document = html.fromstring(response.content)
     second_table = ""
     try:
