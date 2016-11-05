@@ -56,7 +56,7 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
     def dict_to_insert(d, cursor):
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
-        qry = "INSERT INTO dump_monthly_well_production_" + str(year) + " (" + table_names + ") VALUES (%s);" % values
+        qry = "INSERT INTO monthly_well_production (" + table_names + ") VALUES (%s) " % values
         cursor.execute(qry, list(d.values()))
     with get_connection() as connection1:
         with get_connection() as connection2:
@@ -77,17 +77,8 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
                     d['sidetrack_num'] = row[2]
                     dict_to_insert(d, cursor2)
                 connection2.commit()
-                fh.write(row[0]+row[1]+row[2]+str(year)+':')
+                fh.write(row[0]+row[1]+row[2]+':')
                 fh.flush()
-    with get_connection() as connection:
-        cursor = connection.cursor()
-        query = "TRUNCATE monthly_well_production_%s CASCADE;" % year
-        insert_query = """INSERT INTO monthly_well_production_%s (year,api_county_code,api_seq_num,sidetrack_num, month,well_status,days_prod,bom,produced,oil_sold,adjusted,eom,gravity,prod,flared,used,shrinkage,gas_sold,btu,gas_tbg,gas_csg,water_prob,water_disp,water_tbg,water_csg)
-        SELECT year,api_county_code,api_seq_num,sidetrack_num, month,well_status,days_prod,bom,produced,oil_sold,adjusted,eom,gravity,prod,flared,used,shrinkage,gas_sold,btu,gas_tbg,gas_csg,water_prob,water_disp,water_tbg,water_csg
-        FROM dump_monthly_well_production_%s""" % (year,year)
-        cursor.execute(query)
-        cursor.execute(insert_query)
-        connection.commit()
     logging.info(u"Inserting -- success")
 
 

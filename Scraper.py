@@ -3,12 +3,19 @@ from lxml import etree
 from datetime import date
 import logging
 import requests
-
+import requests.exceptions
 sceleton = 'http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=%s&APISeq=%s&APIWB=%s&Year=%s'
 
-def get_rows_by_link(link):
+def get_rows_by_link(link, recursive_count=0):
     logging.info('Downloading ' + link)
-    response = requests.get(link, timeout=10)
+    response = ""
+    try:
+        response = requests.get(link, timeout=10)
+    except requests.exceptions.ReadTimeout:
+        logging.ERROR(u"EXCEPTION AT: " + link)
+        if recursive_count > 3:
+            return ()
+        return get_rows_by_link(link,recursive_count=recursive_count + 1)
     document = html.fromstring(response.content)
     second_table = ""
     try:
@@ -19,6 +26,7 @@ def get_rows_by_link(link):
     for tr in second_table.xpath("//tr[position()>5]"):
         row = {}
         row["month"] = tr.xpath("./td[1]//text()")[0]
+        row["formation"] = tr.xpath("./td[2]//text()")[0]
         row["well_status"] = tr.xpath("./td[4]//text()")[0]
         row["days_prod"] = tr.xpath("./td[5]//text()")[0]
         row["bom"] = tr.xpath("./td[7]//text()")[0]
