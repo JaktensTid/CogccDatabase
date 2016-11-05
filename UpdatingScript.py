@@ -58,7 +58,7 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
         qry = "INSERT INTO monthly_well_production (" + table_names + ") VALUES (%s) " % values
-        qry += 'ON CONFLICT DO NOTHING;'
+        qry += 'ON CONFLICT (year, api_county_code, api_seq_num, sidetrack_num, month, formation) DO NOTHING;'
         cursor.execute(qry, list(d.values()))
     with get_connection() as connection1:
         with get_connection() as connection2:
