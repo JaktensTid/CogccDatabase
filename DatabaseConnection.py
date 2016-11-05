@@ -1,8 +1,8 @@
 import psycopg2
-
+import os
 
 def get_connection():
-    return psycopg2.connect(database="data",user="postgres",host="138.68.81.207",port=5432,password="7ACGApgx")
+    return psycopg2.connect(database="data",user="postgres",host="localhost",port=5432,password=os.environ['DATABASE_PASS'])
 
 def write_checked_api_in_database(year):
     with get_connection() as connection:

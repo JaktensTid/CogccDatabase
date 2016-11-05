@@ -39,7 +39,7 @@ def move_data_to_wells_apis():
                 SELECT api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, name, operator_num, field_code, field_name, api_num, (qtrqtr || ' ' || sec || ' ' || twp || ' ' || range || ' ' || meridian) as location
                 FROM well_completions
                 GROUP BY api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, name, operator_num, field_code, field_name, api_num, qtrqtr, sec,  twp, range, meridian
-                ON CONFLICT DO NOTHING;"""
+                ON CONFLICT (year, api_county_code, api_seq_num, sidetrack_num, month, formation) DO NOTHING;"""
         cursor.execute(query)
         connection.commit()
         logging.info(u"Move new data to wells apis -- success")
@@ -57,8 +57,8 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
     def dict_to_insert(d, cursor):
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
-        qry = "INSERT INTO monthly_well_production (" + table_names + ") VALUES (%s) " % values
-        qry += 'ON CONFLICT (year, api_county_code, api_seq_num, sidetrack_num, month, formation) DO NOTHING;'
+        qry = "INSERT INTO monthly_well_production_" + str(year) +" (" + table_names + ") VALUES (%s) " % values
+        qry += 'ON CONFLICT DO NOTHING;'
         cursor.execute(qry, list(d.values()))
     with get_connection() as connection1:
         with get_connection() as connection2:
