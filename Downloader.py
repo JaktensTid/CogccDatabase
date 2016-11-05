@@ -152,6 +152,61 @@ def insert_to_database(path_to_csv, query, year, id='reports', cron=False):
         os.remove(path_to_csv)
     logging.info(u"Inserting into database ended, inserted rows count: " + str(inserted_rows_counter))
 
+def check_necessary_tables_and_create_if_not_exists(year):
+    with get_connection() as connection:
+        cursor = connection.cursor()
+        cursor.execute("""SELECT EXISTS (
+           SELECT 1
+           FROM   information_schema.tables
+           WHERE  table_schema = 'public'
+           AND    table_name = 'checked_api_%s');""" % year)
+        table_exists = True
+        for row in cursor:
+            table_exists = row[0]
+            break
+        if not table_exists:
+            cursor.execute("""CREATE TABLE checked_api_%s(api_county_code varchar(3),
+            api_seq_num varchar(5)
+            sidetrack_num varchar(2)""" % year)
+        connection.commit()
+        cursor.execute("""SELECT EXISTS (
+                           SELECT 1
+                           FROM   information_schema.tables
+                           WHERE  table_schema = 'public'
+                           AND    table_name = 'dump_monthly_well_production_%s');""" % year)
+        for row in cursor:
+            table_exists = row[0]
+            break
+        if not table_exists:
+            cursor.execute("""CREATE TABLE public.dump_monthly_well_production_%s
+                            (
+                              year smallint,
+                              api_county_code character varying(3),
+                              api_seq_num character varying(5),
+                              sidetrack_num character varying(2),
+                              month character varying(3),
+                              well_status character varying(3),
+                              days_prod character varying(10),
+                              bom character varying(10),
+                              produced character varying(10),
+                              oil_sold character varying(10),
+                              adjusted character varying(10),
+                              eom character varying(10),
+                              gravity character varying(10),
+                              prod character varying(10),
+                              flared character varying(10),
+                              used character varying(10),
+                              shrinkage character varying(10),
+                              gas_sold character varying(10),
+                              btu character varying(10),
+                              gas_tbg character varying(5),
+                              gas_csg character varying(5),
+                              water_prob character varying(10),
+                              water_disp character varying(10),
+                              water_tbg character varying(10),
+                              water_csg character varying(10)
+                            )""" % year)
+        connection.commit()
 
 def _test_exporting():
     path_to_csv = "Temporary/colorado well completions.csv"
@@ -162,24 +217,10 @@ if __name__ == "__main__":  # path_to_mdb = download_well_completion("http://cog
     #download_and_insert_all_well_completions()
     #download_and_insert_all_production_reports()
 
-    for year in reversed(range(1999, 2017)):
+    for year in reversed(range(1999, date.today().year + 1)):
         with open('checkedapi_%s' % year, 'a') as fh:
-            with get_connection() as connection:
-                cursor = connection.cursor()
-                cursor.execute("""SELECT EXISTS (
-                   SELECT 1
-                   FROM   information_schema.tables
-                   WHERE  table_schema = 'public'
-                   AND    table_name = 'checked_api_%s');""" % date.today().year)
-                table_exists = True
-                for row in cursor:
-                    table_exists = row[0]
-                    break
-                if not table_exists:
-                    cursor.execute("""CREATE TABLE checked_api_%s(api_county_code varchar(3),
-                    api_seq_num varchar(5)
-                    sidetrack_num varchar(2)""" % year)
-                connection.commit()
+            check_necessary_tables_and_create_if_not_exists(year)
             logging.info(u'Current working: ' + str(year))
             UpdatingScript.download_and_insert_data_by_all_apis_by_year(year, fh)
+
     logging.info(u'Processing ended *********')

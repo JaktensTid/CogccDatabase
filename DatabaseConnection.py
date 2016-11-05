@@ -7,32 +7,33 @@ def get_connection():
 def write_checked_api_in_database(year):
     with get_connection() as connection:
         cursor = connection.cursor()
+        counter = 0
         with open('checkedapi_%s' % year, 'r') as fh:
             str = fh.read()
             query = """INSERT INTO checked_api_%s(api_county_code,
                                 api_seq_num,
-                                sidetrack_num,
-                                year)""" % year
+                                sidetrack_num)""" % year
             splited = str.split(':')
-            counter = 0
             for s in splited:
                 if counter != 0:
                     county = s[0:3]
                     seq = s[3:8]
                     sidetrack = s[8:10]
-                    year = s[10:]
-                    if year != '':
-                        query += ",('%s','%s','%s','%s')" % (county, seq,sidetrack,year)
+                    if county != '':
+                        query += ",('%s','%s','%s')" % (county, seq,sidetrack)
                 else:
                     county = s[0:3]
                     seq = s[3:8]
                     sidetrack = s[8:10]
-                    year = s[10:]
-                    query += " VALUES('%s','%s','%s','%s')" % (county, seq,sidetrack,year)
+                    query += " VALUES('%s','%s','%s')" % (county, seq,sidetrack)
                 counter += 1
+            query += ' ON CONFLICT DO NOTHING;'
             cursor.execute(query)
             connection.commit()
             print('Over')
+
+if __name__ == '__main__':
+    write_checked_api_in_database('2016')
 
 
 

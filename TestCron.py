@@ -1,5 +1,9 @@
 import datetime
 import Scraper
+<<<<<<< HEAD
+=======
+
+>>>>>>> d18fd0220d30f6937dfa73ab3e543ca291a98c64
 def test():
     try:
         fh = open("/home/Cogcc/CogccDatabase/Temporary/cronlog.txt", 'r')
@@ -13,6 +17,10 @@ def test():
         file_handler.write("Test cron job at: " + str(current_time) + '\n')
 
 if __name__ == "__main__":
+<<<<<<< HEAD
     rows = Scraper.download_data_by_well_one_year('071','06722','00',2016)
     print(rows)
+=======
+    rows = Scraper.download_data_by_well_one_year('071','06722','00', 2016)
+>>>>>>> d18fd0220d30f6937dfa73ab3e543ca291a98c64
 
