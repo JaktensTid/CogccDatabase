@@ -19,7 +19,8 @@ def check_and_create_table_if_not_exist():
             break
         if not table_exists:
             year = date.today().year
-            create_table_query = """CREATE TABLE monthly_well_production_%s (CHECK (year = %s))
+            create_table_query = """CREATE TABLE monthly_well_production_%s (CHECK (year = %s),
+                                PRIMARY KEY(year,api_county_code,api_seq_num,sidetrack_num,month,formation))
                                 INHERITS (monthly_well_production);""" % (year,year)
             cursor.execute(create_table_query)
             connection.commit()
@@ -57,6 +58,7 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
         qry = "INSERT INTO monthly_well_production (" + table_names + ") VALUES (%s) " % values
+        qry += 'ON CONFLICT DO NOTHING;'
         cursor.execute(qry, list(d.values()))
     with get_connection() as connection1:
         with get_connection() as connection2:
