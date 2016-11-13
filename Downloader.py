@@ -166,8 +166,7 @@ def check_necessary_tables_and_create_if_not_exists(year):
             break
         if not table_exists:
             cursor.execute("""CREATE TABLE checked_api_%s(api_county_code varchar(3),
-            api_seq_num varchar(5)
-            sidetrack_num varchar(2)""" % year)
+            api_seq_num varchar(5),sidetrack_num varchar(2));""" % year)
         connection.commit()
 
 def _test_exporting():
@@ -179,7 +178,7 @@ if __name__ == "__main__":  # path_to_mdb = download_well_completion("http://cog
     #download_and_insert_all_well_completions()
     #download_and_insert_all_production_reports()
 
-    for year in reversed(range(1999, date.today().year + 1)):
+    for year in reversed(range(1999, date.today().year)):
         with open('checked_api_%s' % year, 'a') as fh:
             check_necessary_tables_and_create_if_not_exists(year)
             logging.info(u'Current working: ' + str(year))

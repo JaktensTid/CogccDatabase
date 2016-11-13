@@ -4,6 +4,7 @@ from datetime import date
 import logging
 import requests
 import requests.exceptions
+import socket
 sceleton = 'http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=%s&APISeq=%s&APIWB=%s&Year=%s'
 
 def get_rows_by_link(link, recursive_count=0):
@@ -11,8 +12,7 @@ def get_rows_by_link(link, recursive_count=0):
     response = ""
     try:
         response = requests.get(link, timeout=10)
-    except requests.exceptions.ReadTimeout:
-        logging.ERROR(u"EXCEPTION AT: " + link)
+    except requests.exceptions.RequestException:
         if recursive_count > 3:
             return ()
         return get_rows_by_link(link,recursive_count=recursive_count + 1)

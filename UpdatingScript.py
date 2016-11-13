@@ -89,7 +89,7 @@ def update():
     Downloader.download_and_insert_last_well_completion()
     move_data_to_wells_apis()
     check_and_create_table_if_not_exist()
-    clear_last_year_table()
+    # clear_last_year_table()
     with open('cron_apis_by_year','w+') as fh:
         year = date.today().year
         Downloader.check_necessary_tables_and_create_if_not_exists(year)
