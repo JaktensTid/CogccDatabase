@@ -27,13 +27,20 @@ def write_checked_api_in_database(year):
                     sidetrack = s[8:10]
                     query += " VALUES('%s','%s','%s')" % (county, seq,sidetrack)
                 counter += 1
+                if counter % 10000 == 0:
+                    cursor.execute(query)
+                    connection.commit()
+                    query = """INSERT INTO checked_api_%s(api_county_code,
+                                api_seq_num,
+                                sidetrack_num)""" % year
+                    counter = 0
             query += ' ON CONFLICT DO NOTHING;'
             cursor.execute(query)
             connection.commit()
             print('Over')
 
 if __name__ == '__main__':
-    write_checked_api_in_database('2016')
+    write_checked_api_in_database('2015')
 
 
 
