@@ -3,7 +3,7 @@ import logging
 from datetime import date
 from DatabaseConnection import get_connection
 from Scraper import download_data_by_well_one_year
-
+from time import strptime
 def check_and_create_table_if_not_exist():
     with get_connection() as connection:
         cursor = connection.cursor()
@@ -55,6 +55,8 @@ def clear_last_year_table():
 
 def download_and_insert_data_by_all_apis_by_year(year,fh):
     def dict_to_insert(d, cursor):
+        if d['prod']: d['prod'] = d['prod'].replace(',','.')
+        if d['produced']: d['produced'] = d['produced'].replace(',','.')
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
         qry = "INSERT INTO monthly_well_production_" + str(year) +" (" + table_names + ") VALUES (%s) " % values
@@ -77,6 +79,7 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
                     d['api_county_code'] = row[0]
                     d['api_seq_num'] = row[1]
                     d['sidetrack_num'] = row[2]
+                    d['m_y'] = str(d['year']) + '-' + str(strptime(d['month'],'%b')) + '-1'
                     dict_to_insert(d, cursor2)
                 connection2.commit()
                 fh.write(row[0]+row[1]+row[2]+':')
