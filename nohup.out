@@ -1,0 +1,75 @@
+INFO:root:Current working: 2016
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05000&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05000&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05001&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05001&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05002&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05002&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05003&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05003&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05004&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05004&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05005&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05005&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05006&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05006&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05007&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05007&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05008&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05008&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05009&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05009&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05010&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05010&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05011&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05011&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05012&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05012&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05013&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05013&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05014&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05014&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05015&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05015&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05016&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05016&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05017&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05017&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05018&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05018&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05019&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05019&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05020&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05020&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05021&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05021&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05022&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05022&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05023&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us
+DEBUG:requests.packages.urllib3.connectionpool:"GET /cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05023&APIWB=00&Year=2016 HTTP/1.1" 200 1105
+INFO:root:Downloading http://cogcc.state.co.us/cogis/ProductionWellMonthly.asp?APICounty=001&APISeq=05025&APIWB=00&Year=2016
+INFO:requests.packages.urllib3.connectionpool:Starting new HTTP connection (1): cogcc.state.co.us

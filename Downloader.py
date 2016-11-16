@@ -11,7 +11,7 @@ import subprocess
 from datetime import date
 import UpdatingScript
 import re
-
+from UpdatingScript import check_and_create_table_if_not_exists
 insert_into_well_completions_query = "INSERT INTO {0}({1}) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)".format(
     tables_names[0], ','.join(column_names[0]))
 insert_into_production_reports_query = "INSERT INTO {0}({1}) VALUES(%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s,%s)".format(
@@ -178,7 +178,7 @@ if __name__ == "__main__":  # path_to_mdb = download_well_completion("http://cog
     #download_and_insert_all_well_completions()
     #download_and_insert_all_production_reports()
 
-    for year in reversed(range(1999, date.today().year)):
+    for year in reversed(range(1999, date.today().year + 1)):
         with open('checked_api_%s' % year, 'a') as fh:
             check_necessary_tables_and_create_if_not_exists(year)
             logging.info(u'Current working: ' + str(year))

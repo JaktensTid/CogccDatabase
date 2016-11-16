@@ -4,7 +4,7 @@ from datetime import date
 from DatabaseConnection import get_connection
 from Scraper import download_data_by_well_one_year
 from time import strptime
-def check_and_create_table_if_not_exist():
+def check_and_create_table_if_not_exist(year):
     with get_connection() as connection:
         cursor = connection.cursor()
         cursor.execute("""SELECT EXISTS (
@@ -12,13 +12,12 @@ def check_and_create_table_if_not_exist():
            FROM   information_schema.tables
            WHERE  table_schema = 'public'
            AND    table_name = 'monthly_well_production_%s'
-        );""" % date.today().year)
+        );""" % year)
         table_exists = True
         for row in cursor:
             table_exists = row[0]
             break
         if not table_exists:
-            year = date.today().year
             create_table_query = """CREATE TABLE monthly_well_production_%s (CHECK (year = %s),
                                 PRIMARY KEY(year,api_county_code,api_seq_num,sidetrack_num,month,formation))
                                 INHERITS (monthly_well_production);""" % (year,year)
@@ -91,7 +90,7 @@ def update():
     logging.info(u"Cron job started")
     Downloader.download_and_insert_last_well_completion()
     move_data_to_wells_apis()
-    check_and_create_table_if_not_exist()
+    check_and_create_table_if_not_exist(date.today().year)
     # clear_last_year_table()
     with open('cron_apis_by_year','w+') as fh:
         year = date.today().year
