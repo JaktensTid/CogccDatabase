@@ -40,7 +40,7 @@ def write_checked_api_in_database(year):
             print('Over')
 
 if __name__ == '__main__':
-    write_checked_api_in_database('2015')
+    write_checked_api_in_database('2013')
 
 
 

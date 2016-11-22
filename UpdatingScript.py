@@ -1,10 +1,11 @@
 import Downloader
 import logging
 from datetime import date
+from time import strptime
 from DatabaseConnection import get_connection
 from Scraper import download_data_by_well_one_year
-from time import strptime
-def check_and_create_table_if_not_exist(year):
+
+def check_and_create_table_if_not_exist():
     with get_connection() as connection:
         cursor = connection.cursor()
         cursor.execute("""SELECT EXISTS (
@@ -12,12 +13,13 @@ def check_and_create_table_if_not_exist(year):
            FROM   information_schema.tables
            WHERE  table_schema = 'public'
            AND    table_name = 'monthly_well_production_%s'
-        );""" % year)
+        );""" % date.today().year)
         table_exists = True
         for row in cursor:
             table_exists = row[0]
             break
         if not table_exists:
+            year = date.today().year
             create_table_query = """CREATE TABLE monthly_well_production_%s (CHECK (year = %s),
                                 PRIMARY KEY(year,api_county_code,api_seq_num,sidetrack_num,month,formation))
                                 INHERITS (monthly_well_production);""" % (year,year)
@@ -34,11 +36,11 @@ def check_and_create_table_if_not_exist(year):
 def move_data_to_wells_apis():
     with get_connection() as connection:
         cursor = connection.cursor()
-        query = """INSERT INTO wells_apis (api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, operator_name, operator_num, field_code, field_name, api_num, location)
-                SELECT api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, name, operator_num, field_code, field_name, api_num, (qtrqtr || ' ' || sec || ' ' || twp || ' ' || range || ' ' || meridian) as location
+        query = """INSERT INTO wells_apis (api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, operator_name, operator_num, field_code, field_name, api_num, location, first_prod_date)
+                SELECT api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, name, operator_num, field_code, field_name, api_num, (qtrqtr || ' ' || sec || ' ' || twp || ' ' || range || ' ' || meridian) as location, first_prod_date
                 FROM well_completions
-                GROUP BY api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, name, operator_num, field_code, field_name, api_num, qtrqtr, sec,  twp, range, meridian
-                ON CONFLICT (year, api_county_code, api_seq_num, sidetrack_num, month, formation) DO NOTHING;"""
+                GROUP BY api_county_code, api_seq_num, sidetrack_num, facility_name,facility_num, name, operator_num, field_code, field_name, api_num, qtrqtr, sec,  twp, range, meridian, first_prod_date
+                ON CONFLICT (api_county_code, api_seq_num, sidetrack_num) DO NOTHING;"""
         cursor.execute(query)
         connection.commit()
         logging.info(u"Move new data to wells apis -- success")
@@ -54,8 +56,8 @@ def clear_last_year_table():
 
 def download_and_insert_data_by_all_apis_by_year(year,fh):
     def dict_to_insert(d, cursor):
-        if d['prod']: d['prod'] = d['prod'].replace(',','.')
-        if d['produced']: d['produced'] = d['produced'].replace(',','.')
+        if d['prod']: d['prod'] = d['prod'].replace(',','')
+        if d['produced']: d['produced'] = d['produced'].replace(',','')
         table_names = ', '.join(list(d.keys()))
         values = ', '.join(['%s' for i in list(d.values())])
         qry = "INSERT INTO monthly_well_production_" + str(year) +" (" + table_names + ") VALUES (%s) " % values
@@ -77,8 +79,8 @@ def download_and_insert_data_by_all_apis_by_year(year,fh):
                     d['year'] = year
                     d['api_county_code'] = row[0]
                     d['api_seq_num'] = row[1]
+                    d['m_y'] = str(d['year']) + '-' + str(strptime(d['month'],'%b').tm_mon) + '-' + '1'
                     d['sidetrack_num'] = row[2]
-                    d['m_y'] = str(d['year']) + '-' + str(strptime(d['month'],'%b')) + '-1'
                     dict_to_insert(d, cursor2)
                 connection2.commit()
                 fh.write(row[0]+row[1]+row[2]+':')
@@ -90,7 +92,7 @@ def update():
     logging.info(u"Cron job started")
     Downloader.download_and_insert_last_well_completion()
     move_data_to_wells_apis()
-    check_and_create_table_if_not_exist(date.today().year)
+    check_and_create_table_if_not_exist()
     # clear_last_year_table()
     with open('cron_apis_by_year','w+') as fh:
         year = date.today().year
